@@ -1,13 +1,23 @@
 <?php
-    require_once(__DIR__. "../model/database.php");
+    require_once(__DIR__ . "/../model/database.php");
 
     $connection = new mysqli($host, $username, $password);
     
-    if($connection->conect_error){
+    if($connection->connect_error) {
         die("Error: " . $connection->connect_error);  
     }
+    
+    $exists = $connection->select_db($database);
+    
+    if(!$exists) {
+        $query = $connection->query("CREATE DATABASE $database");
+        
+        if($query) {
+            echo "Sucessfully Created Database: " . $database;
+        }    
+    }
     else {
-        echo "Success" . $connection->host_info;
+        echo "Database already exists";
     }
     
-    $conncection->close();
+    $connection->close();

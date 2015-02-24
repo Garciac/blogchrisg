@@ -1,6 +1,7 @@
 <?php
     require_once(__DIR__ . "/../model/config.php");
     
+    //email, username, password, salt, and hashedPassword settings
     $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
     $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_STRING);
     $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
@@ -15,6 +16,7 @@
             . "password = '$hashedPassword',"
             . "salt = '$salt'");
     
+    //It tells you that it added your account sucessfully
     if($query) {
         echo "Sucessfully created user: $username";
     }

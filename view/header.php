@@ -16,7 +16,7 @@ and open the template in the editor.
     </head>
     <body>
         <!-- navbar -->
-<div class="navbar navbar-inverse navbar-static-top">
+        <div class="navbar navbar-inverse navbar-static-top">
             <div class="container">
                 <a href="Index.html" class="navbar-brand">Blog</a>
                 <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
@@ -31,7 +31,7 @@ and open the template in the editor.
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="index.php">Blog</a></li>
                         <li><a href="login.php">Login</a></li>
-                        <li><a href="post.php">Post</a></li>
+                        <li><a href="post.php">Create Post</a></li>
                         <li><a href="register.php">Register</a></li>
                         <li><a href="controller/logout-user.php">Logout</a></li>
                     </ul>
@@ -39,8 +39,9 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
-                  <div class="jumbotron">
-            <img src="images/blog.jpg" alt="Blog" vspace="20" class="pull-left" class="img-responsive"/>
+        <!--jumbotron -->
+        <div class="jumbotron">
+            <img src="images/blog.jpg" alt="Blog" vspace="20" class="center-block" class="img-responsive"/>
             <center><h1>My Blog</h1>
                 <p>Welcome to my Blog!</p>
         </div>

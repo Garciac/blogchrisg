@@ -1,8 +1,10 @@
+/** image size for picture on jumbotron. **/
 img {
     width: 150px;
     height: auto;
 }
 
+/** background color for blog **/
 body {
-    background-color: #2aabd2;
+    background-color: olive;
 }

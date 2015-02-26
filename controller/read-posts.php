@@ -1,7 +1,7 @@
 <?php
 
     require_once(__DIR__ . "/../model/config.php");
-
+//It shows all your post you posted
     $query = "SELECT * FROM posts";
     $result = $_SESSION["connection"]->query($query);
     

@@ -9,13 +9,14 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
         <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
-        <link type="text/css" rel="stylesheet" href="css/custom-style.css">
+        <link type="text/css" rel="stylesheet" href="css/custom.css">
         <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="css/custom.css">
         <title>Blog</title>
     </head>
     <body>
-         <!-- navbar -->
-        <div class="navbar navbar-inverse navbar-static-top">
+        <!-- navbar -->
+<div class="navbar navbar-inverse navbar-static-top">
             <div class="container">
                 <a href="Index.html" class="navbar-brand">Blog</a>
                 <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
@@ -32,11 +33,16 @@ and open the template in the editor.
                         <li><a href="login.php">Login</a></li>
                         <li><a href="post.php">Post</a></li>
                         <li><a href="register.php">Register</a></li>
-                        <li><a href=""></a></li>
+                        <li><a href="controller/logout-user.php">Logout</a></li>
                     </ul>
 
                 </div>
             </div>
+        </div>
+                  <div class="jumbotron">
+            <img src="images/blog.jpg" alt="Blog" vspace="20" class="pull-left" class="img-responsive"/>
+            <center><h1>My Blog</h1>
+                <p>Welcome to my Blog!</p>
         </div>
     </body>
 </html>

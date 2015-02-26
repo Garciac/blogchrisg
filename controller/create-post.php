@@ -9,6 +9,7 @@
     
     // In line 11 to 13, it will tell you that your post was successully added
     if($query){
+        header("Location: " . $path . "index.php");
         echo "<p>Sucessfully inserted post: $title</p>";
     }
     else{

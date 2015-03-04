@@ -16,7 +16,7 @@ and open the template in the editor.
     </head>
     <body>
         <!-- navbar -->
-        <div class="navbar navbar-inverse navbar-static-top">
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
             <div class="container">
                 <a href="Index.html" class="navbar-brand">Blog</a>
                 <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">

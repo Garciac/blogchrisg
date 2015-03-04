@@ -21,6 +21,8 @@ $query = $_SESSION["connection"]->query("INSERT INTO users SET "
 //It tells you that it added your account sucessfully
 if ($query) {
     echo "Sucessfully created user: $username";
+     header("Location: " . $path . "login.php");
+    
 } else {
     echo "<p>" . $_SESSION["connection"]->error . "</p>";
 }

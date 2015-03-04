@@ -9,6 +9,8 @@ class Database {
     private $password;
     private $database;
     public $error;
+    
+
 
     public function __construct($host, $username, $password, $database) {
 //database for host,username,password, and database
